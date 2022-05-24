@@ -1,0 +1,26 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 27
+    defaultConfig {
+        applicationId "com.vuzix.blade.devkit.gestures_sample"
+        minSdkVersion 22
+        targetSdkVersion 27
+        versionCode 1
+        versionName "1.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'com.vuzix:hud-actionmenu:1.1'
+    implementation 'com.vuzix:hud-resources:1.1'
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.vuzix:sdk-barcode:1.71'
+}

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <EditText
+        android:id="@+id/ETmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEncrypt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:text=" "
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/ETdmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEncrypt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="200dp"
+        android:layout_marginTop="100dp"
+        android:gravity="center"
+        android:minHeight="50dp"
+        android:text=" "
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/btnEncrypt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="50dp"
+        android:text="Encrypt" />
+
+    <Button
+        android:id="@+id/btnDecrypt"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnEncrypt"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:text="Decrypt" />
+
+    <!--Show Pair list button-->
+    <TextView
+        android:id="@+id/TVmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnEncrypt"
+        android:layout_marginTop="750dp"
+        android:layout_marginBottom="200dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="50dp" />
+
+    <TextView
+        android:id="@+id/TVdmsg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnDecrypt"
+        android:layout_marginTop="750dp"
+        android:layout_marginBottom="200dp"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="50dp" />
+
+</RelativeLayout>

@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:text="ON/OFF"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnONOFF"/>
+
+    <Button
+        android:id="@+id/btnDiscoverable_on_off"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="btnEnableDisable_Discoverable"
+        android:text="Enable Disc" />
+
+    <Button
+        android:id="@+id/btnFindUnpairedDevices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="btnDiscover"
+        android:text="Discover" />
+
+    <ListView
+        android:id="@+id/NewDevices"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_below="@+id/connectionButton"
+        android:layout_marginTop="15dp" />
+
+    <Button
+        android:id="@+id/connectionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFindUnpairedDevices"
+        android:layout_marginTop="10dp"
+        android:text="Start Con." />
+
+    <Button
+        android:id="@+id/getVals"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFindUnpairedDevices"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:text="Diffie" />
+
+    <Button
+        android:id="@+id/keyPadBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnFindUnpairedDevices"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@+id/connectionButton"
+        android:text="KeyPad"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/keyPad"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/NewDevices"
+        android:layout_centerInParent="true"
+        android:visibility="gone">
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_toRightOf="@id/a1"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_toRightOf="@id/a2"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_toRightOf="@id/a3"
+            android:ems="10"
+            android:text=" "
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/b1"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/a1"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/b2"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/a2"
+            android:layout_toRightOf="@id/b1"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/b3"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/a3"
+            android:layout_toRightOf="@id/b2"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/b4"
+            android:layout_width="150px"
+            android:layout_height="70px"
+            android:layout_below="@id/a4"
+            android:layout_toRightOf="@id/b3"
+            android:ems="10"
+            android:text="Enter"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/c1"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/b1"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/c2"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/b2"
+            android:layout_toRightOf="@id/b1"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/c3"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/b3"
+            android:layout_toRightOf="@id/b2"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/c4"
+            android:layout_width="150px"
+            android:layout_height="70px"
+            android:layout_below="@id/b4"
+            android:layout_toRightOf="@id/b3"
+            android:ems="10"
+            android:text="Clear"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/d1"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/c1"
+            android:ems="10"
+            android:text=" "
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/d2"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/c2"
+            android:layout_toRightOf="@id/b1"
+            android:ems="10"
+            android:text="0"
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/d3"
+            android:layout_width="60px"
+            android:layout_height="70px"
+            android:layout_below="@id/c3"
+            android:layout_toRightOf="@id/b2"
+            android:ems="10"
+            android:text=" "
+            android:textAlignment="center" />
+
+        <TextView
+            android:id="@+id/d4"
+            android:layout_width="200px"
+            android:layout_height="70px"
+            android:layout_below="@id/c4"
+            android:layout_toRightOf="@id/b3"
+            android:ems="10"
+            android:text="Cancel"
+            android:textAlignment="center" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

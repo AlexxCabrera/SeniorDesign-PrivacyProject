@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ECE186B</string>
+    <string name="exit_app">To Exit the app hold 2 fingers on the touchpad area for 1 second or more to go HOME</string>
+    <string name="basic_gestures">Some of the basic gestures are: \n
+    - One Finger Tap = Wakeup device / Select \n
+    - One Finger Swipe Up = Previous row(go up) with soft-keyboard \n
+    - One Finger Swipe Down = Next row(go down) with soft-keyboard \n
+    - One Finger Hold = Bring up menu(when available) \n
+    - Two Finger Swipe Back = Delete / Backspace in keyboard only \n
+    - Two Finger Swipe Forward = Delete action on notifications and camera apps \n
+        \t Add space with soft-keyboard up only \n
+    - Two Finger Swipe Up = Volume up \n
+    - Two Finger Swipe Down = Volume down \n
+    - Two Finger Hold = HOME \n
+    - Three Finger Tap = Screen OFF \n
+    - Three Finger Hold = Assistant Activation \n</string>
+    <string name="log_area">Input received by system</string>
+    <string name="scan_instructions">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="scan_to_fill">Scan to Fill</string>
+</resources>
